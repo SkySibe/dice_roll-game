@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title data-tag="title">הימורים</title>
+  <link rel="stylesheet" href="styles.css" />
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <link href="https://fonts.googleapis.com/css2?family=Varela+Round&display=swap" rel="stylesheet">
+</head>
+<body>
+<a class="languageSwitch" href="#" onclick="setLanguage('en')">English</a> 
+<a class="languageSwitch" href="#" onclick="setLanguage('es')">Español</a>
+<a class="languageSwitch" href="#" onclick="setLanguage('he')">עברית</a>
+  <h1 id="bankc"><span id="plusb" class="plus a"></span><span data-tag="bank">קופה: </span><span id="bank">100</span></h1>
+  <div id="container">
+    <div id="playerOneContent" dir="rtl">
+      <h3><span id="plus1" class="plus"></span><span data-tag="playermoney">כמות הכסף שלך </span><span id="playerOneMoney">1000</span></h3>
+      <h4 data-tag="choosebet">בחר את סכום ההימור</h4>
+      <input class="sliders btsld" type="range" min="1" max="1000" value="20" id="playerOneBet" oninput="updateS1()"
+        onchange="updateS1()">
+      <p id="s1v">20</p>
+      <h4 data-tag="choosenum">בחר את מספר ההימור מ1 עד 6</h4>
+      <input class="sliders rndsld dice5" type="range" min="1" max="6" value="5" id="playerOneR" oninput="updateR1()"
+        onchange="updateR1()">
+      <p id="r1v">5</p>
+      <div id="playerOneDices" class="playersDices">
+        
+      </div>
+    </div>
+    <div id="results" dir="rtl" >
+      <button id="go" type="button" onclick="start()"><span data-tag="start">קדימה</span></button>
+      <h2 id="whowon"></h2>
+      <div id="numre">
+
+      </div>
+    </div>
+    <div id="playerTwoContent" dir="rtl">
+      <h3><span id="plus2" class="plus"></span><span data-tag="playermoney">כמות הכסף שלך </span><span id="playerTwoMoney">1000</span></h3>
+      <h4 data-tag="choosebet">בחר את סכום ההימור</h4>
+      <input class="sliders btsld" type="range" min="1" max="1000" value="20" id="playerTwoBet" oninput="updateS2()"
+        onchange="updateS2()">
+      <p id="s2v">20</p>
+      <h4 data-tag="choosenum">בחר את מספר ההימור מ1 עד 6</h4>
+      <input class="sliders rndsld dice5" type="range" min="1" max="6" value="5" id="playerTwoR" oninput="updateR2()"
+        onchange="updateR2()">
+      <p id="r2v">5</p>
+      <div id="playerTwoDices" class="playersDices">
+
+      </div>
+    </div>
+  </div>
+  <script src="scripts.js"></script>
+  <a href="#" id="hint"><span id="hintbox" data-tag="hint">השתמש בחצים מעלה ומטה כדי לקבוע ערך מדיוק יותר לסכום
+      ההימור</span><strong>?</strong></a href="#" id=">
+    </body>

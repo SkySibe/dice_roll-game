@@ -1,0 +1,16 @@
+{
+    "title": "Las Apuestas",
+    "bank": "El premio mayor: ",
+    "playermoney": "El saldo de dinero ", 
+    "choosebet": "Elige tu apuesta",
+    "choosenum": "Elige un número de uno a seis para la apuesta",
+    "start": "Empesa",
+    "hint": "Use las teclas de flecha ARRIBA y ABAJO para cambiar el valor de la apuesta con mayor precisión",
+    "2plyrslos": "Ambos jugadores perdieron",
+    "firstlos": "El primer jugador ha perdido",
+    "secondlos": "El segundo jugador ha perdido",
+    "no1won": "Nadie ganó",
+    "bothwon": "Ambos jugadores ganaron",
+    "1won": "El primer jugador ha ganado",
+    "2won": "El segundo jugador ha ganado"
+}

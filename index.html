@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <title>Home</title>
+  <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+  <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
+  <style type="text/css">
+    body {
+      background-color: #3385ff;
+      text-align: center;
+    }
+    #wel {
+      text-align: center;
+      color: #ccccff;
+      font-size: 100px;
+    }
+    #bets {
+      font-family: 'Varela Round', sans-serif;
+      background-color:  rgb(67, 67, 255); 
+      color: lightblue; 
+      border: 2px solid rgb(35, 35, 245);
+      padding: 2px 6px;
+      transition-duration: 0.4s;
+      font-size: 24px;
+      margin-top: 13%;
+    }
+    #bets:hover {
+      background-color: rgb(35, 35, 245);
+      color: white;
+    }
+  </style>
+</head>
+<body>
+  <h1 id="wel">WELCOME!</h1>
+  <button id="bets" onclick="tobet()">! עבור למשחק הימורי הקוביות<br/>Go to the dice roll bets game !<br/>¡Ve al juego de tirar dados!</button>
+  <script>
+    //just for fun
+    $(document).ready(function () {
+      $('#wel').hover(function () {
+        $(this).animate({
+          opacity: 0.4
+        }, 600);
+      }, function () {
+        $(this).animate({
+          opacity: 1.0
+        }, 200);
+      });
+    });
+    //redirect to the game page
+    var tobet = () => {
+      window.location = '/game/bets';
+    }
+  </script>
+</body>

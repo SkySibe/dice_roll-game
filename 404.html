@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="UTF-8">
+  <title>Error 404</title>
+  <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+  <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
+  <style type="text/css">
+    body {
+      background-color: #b30000;
+    }
+
+    #conterr {
+      margin-top: -25px;
+      margin-left: 20%;
+      text-align: center;
+      background-color: #ff3333;
+      width: 60%;
+      height: 60%;
+    }
+
+    #errtxt {
+      padding: 10px;
+      margin-top: 10%;
+      text-align: center;
+      font-size: 80px;
+      color: #a6a6a6;
+    }
+
+    img {
+      width: 80%;
+      margin-bottom: 10px;
+    }
+  </style>
+</head>
+
+<body>
+  <div id="conterr">
+    <h1 id="errtxt" class="bg-danger">Error 404: <br> Page not found</h1>
+    <img id="image" />
+  </div>
+  <script>
+    //checking the url and go back if needed
+    var url = document.URL;
+    var redir = (url.match(/\//g) || []).length - 2;
+    var drc;
+    switch (redir) {
+      case 1:
+        drc = "img/"
+        break;
+      case 2:
+        drc = "../img/"
+        break;
+      case 3:
+        drc = "../../img/"
+        break;
+      case 4:
+        drc = "../../../img/"
+        break;
+      case 5:
+        drc = "../../../../img/"
+        break;
+      case 6:
+        drc = "../../../../../img/"
+        break;
+      case 7:
+        drc = "../../../../../../img/"
+        break;
+      case 8:
+        drc = "../../../../../../../img/"
+        break;
+      case 9:
+        drc = "../../../../../../../../img/"
+        break;
+      default:
+        drc = 'img/'
+    }
+    console.log(drc);
+    //all the images names in array
+    var description = [
+      "403-404-405",
+      "brokeinternet",
+      "car404",
+      "cat404",
+      "doorPizza",
+      "face404",
+      "FGears",
+      "goback",
+      "houston",
+      "icecream",
+      "idk",
+      "notclickhere",
+      "nothing",
+      "ohcrap",
+      "serious-fish-spongebob",
+      "sharkslaser",
+      "SW",
+      "terminal",
+      "this404"
+    ];
+    //displays random image
+    var size = description.length
+    var x = Math.floor(size * Math.random())
+    document.getElementById('image').src = drc + description[x];
+  </script>
+</body>

@@ -1,0 +1,242 @@
+.languageSwitch {
+  background-color: midnightblue;
+  text-decoration: none;
+  color: lightblue;
+  padding: 2px 6px;
+}
+.languageSwitch:hover {
+  background-color: darkblue;
+  color: white;
+}
+#go {
+  font-family: 'Varela Round', sans-serif;
+  background-color:  midnightblue; 
+  color: lightblue; 
+  border: 2px solid darkblue;
+  padding: 2px 6px;
+  transition-duration: 0.4s;
+  font-size: 24px;
+}
+#go:hover {
+  background-color: darkblue;
+  color: white;
+}
+#numre {
+  display: grid;
+  grid-template-columns: repeat(18, 1fr);
+  grid-gap: 2px;
+  position: absolute;
+}
+.playersDices {
+  display: grid;
+  grid-template-columns: repeat(10, 1fr);
+  grid-gap: 1px;
+}
+.conti {
+  position: relative;
+  width: 100%;
+  height: 100%;
+}
+.red {
+  position: absolute;
+      top: 0;
+      left: 5px;
+      clear: float;
+      width: 80%;
+      height: 80%;
+      background-color: rgba(255, 0, 0, 0.3);
+}
+.green {
+  position: absolute;
+      top: 0;
+      left: 5px;
+      clear: float;
+      width: 80%;
+      height: 80%;
+      background-color: rgba(0, 255, 0, 0.3);
+}
+/* .playersDices > *{
+  grid-row: 2;
+  grid-column: 2;
+} */
+#container > * {
+  display: inline-table;
+}
+#playerOneContent {
+  width: 15vw;
+  /* background-color: yellow; */
+}
+#playerTwoContent {
+  /* background-color: red; */
+  width: 15vw;
+  float: right;
+}
+#results{
+  /* background-color: blue; */
+  width: 20vw;
+  text-align: center;
+  padding-left: 24vw;
+}
+/*
+#playerOneContent > *{
+  position: relative;
+}
+#playerTwoContent > *{
+}
+#results, #results > *{
+  text-align: center;
+} */
+
+body {
+    background-image: url("/game/img/greenback");
+    background-repeat: no-repeat;
+    background-size: cover;
+    color: GhostWhite;
+    font-family: 'Varela Round', sans-serif;
+}
+input[type=range] {
+  -webkit-appearance: none;
+  width: 14vw !important;
+  height: 25px;
+  background: darkblue;
+  outline: none;
+  opacity: 0.7;
+  -webkit-transition: .2s;
+  transition: opacity .2s;
+}
+  
+input[type=range]:hover {
+  opacity: 1;
+}
+  
+.btsld::-webkit-slider-thumb {
+  -webkit-appearance: none;
+  appearance: none;
+  width: 25px;
+  height: 25px;
+  background: #4CAF50;
+  cursor: pointer;
+  background: url('/game/img/coini') no-repeat;
+  background-size: cover;
+}
+  
+.btsld::-moz-range-thumb {
+  width: 25px;
+  height: 25px;
+  background: #4CAF50;
+  cursor: pointer;
+  background: url('/game/img/coini') no-repeat;
+  background-size: cover;
+}
+.rndsld::-webkit-slider-thumb {
+  -webkit-appearance: none;
+  appearance: none;
+  width: 25px;
+  height: 25px;
+  background: #4CAF50;
+  cursor: pointer;
+  background-size: cover;
+}
+  
+.rndsld::-moz-range-thumb {
+  width: 25px;
+  height: 25px;
+  background: #4CAF50;
+  cursor: pointer;
+  background-size: cover;
+}
+.dice1::-webkit-slider-thumb {
+  background: url('/game/img/dice1') no-repeat;
+  background-size: cover;
+}
+  
+.dice1::-moz-range-thumb {
+  background: url('/game/img/dice1') no-repeat;
+  background-size: cover;
+}
+.dice2::-webkit-slider-thumb {
+  background: url('/game/img/dice2') no-repeat;
+  background-size: cover;
+}
+  
+.dice2::-moz-range-thumb {
+  background: url('/game/img/dice2') no-repeat;
+  background-size: cover;
+}
+
+.dice3::-webkit-slider-thumb {
+  background: url('/game/img/dice3') no-repeat;
+  background-size: cover;
+}
+  
+.dice3::-moz-range-thumb {
+  background: url('/game/img/dice3') no-repeat;
+  background-size: cover;
+}
+.dice4::-webkit-slider-thumb {
+  background: url('/game/img/dice4') no-repeat;
+  background-size: cover;
+}
+  
+.dice4::-moz-range-thumb {
+  background: url('/game/img/dice4') no-repeat;
+  background-size: cover;
+}
+
+.dice5::-webkit-slider-thumb {
+  background: url('/game/img/dice5') no-repeat;
+  background-size: cover;
+}
+  
+.dice5::-moz-range-thumb {
+  background: url('/game/img/dice5') no-repeat;
+  background-size: cover;
+}
+.dice6::-webkit-slider-thumb {
+  background: url('/game/img/dice6') no-repeat;
+  background-size: cover;
+}
+  
+.dice6::-moz-range-thumb {
+  background: url('/game/img/dice6') no-repeat;
+  background-size: cover;
+}
+
+#hint {
+  font-size: 36px;
+  color: lawngreen;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  margin-left: 1.5vw;
+  margin-bottom: 1.5vw;
+  text-decoration: none;
+}
+#hintbox {
+  display: none; 
+  position: relative; 
+  color: #fff; 
+  background: #000; 
+  padding: 5px;
+}
+
+#hint:hover #hintbox {
+  display: block;
+  text-align: center;
+}
+#plusb {
+  margin-left: 11vw;
+}
+#plus1 {
+  margin-top: -16px;
+}
+#plus2 {
+  margin-top: -16px;
+}
+#bankc {
+  text-align: center;
+}
+.plus {
+  display: none;
+  position: absolute;
+}

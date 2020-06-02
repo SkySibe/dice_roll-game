@@ -1,0 +1,16 @@
+{
+    "title": "Bets",
+    "bank": "Jackpot: ",
+    "playermoney": "Money balance ",
+    "choosebet": "Choose your bet balance",
+    "choosenum": "Choose a number from 1 to 6 for the bet",
+    "start": "Start",
+    "hint": "Use UP&DOWN arrow keys in order to change the bet value more accurately",
+    "2plyrslos": "Both players lost",
+    "firstlos": "Player one lost",
+    "secondlos": "Player two lost",
+    "no1won": "No one won",
+    "bothwon": "Both players won",
+    "1won": "Player one won",
+    "2won": "Player two won"
+}
