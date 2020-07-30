@@ -13,10 +13,20 @@ var setLanguage = (language) => {
             document.getElementById('playerOneContent').dir = 'rtl';
             document.getElementById('playerTwoContent').dir = 'rtl';
             document.getElementById('results').dir = 'rtl';
+            document.getElementById('plusb').style.marginLeft = '11vw';
         } else {
             document.getElementById('playerOneContent').dir = 'ltr';
             document.getElementById('playerTwoContent').dir = 'ltr';
             document.getElementById('results').dir = 'ltr';
+            document.getElementById('playerOneDices').dir = 'rtl';
+            document.getElementById('playerTwoDices').dir = 'rtl';
+            if(language == 'en'){
+                document.getElementById('plusb').style.marginLeft = '15vw';
+
+            } else {
+                document.getElementById('plusb').style.marginLeft = '23vw';
+
+            }
         }
         //sets the page language to the current
         pagelang = language;
@@ -266,7 +276,7 @@ var insert = (result, datas) => {
     //everytime that a text is inserted to the results the language resets in order to set the text by the language 
     setLanguage(pagelang);
 }
-//insert image to the document mainly for dice rolls to the results and so for the players to let them know which dices the rolled the previous turn
+//insert an image to the document mainly for dice rolls to the results and so for the players to let them know which dices the rolled the previous turn
 var insertImg = (srco, divId,won=null) => {
     //get the parent div id
     let div = document.getElementById(divId);
